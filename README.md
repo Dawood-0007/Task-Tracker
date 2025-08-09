@@ -32,7 +32,3 @@ It will start your server on default port 3000 and you will be able to see your 
 We welcome contributions that improve this app.
 
 Whether it's bug fixes, feature enhancements, or code cleanup, feel free to open a pull request!
-
----
-
-Do you also want me to **fix the Markdown link syntax** so the MongoDB link actually works? Right now `(here)[...]` won’t render correctly on GitHub.
