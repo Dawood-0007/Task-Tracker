@@ -11,7 +11,7 @@ import {
 const Navbar = () => {
   return (
     <div className='flex justify-between bg-gray-400 p-4'>
-      <h1 className='font-serif font-bold text-2xl'>Task Tracker</h1>
+      <h1 className='font-serif font-bold lg:text-2xl'>Task Tracker</h1>
       <ul className='flex gap-10 items-center'>
         <Link href={"/"}><li className='cursor-pointer hover:underline'>Home</li></Link>
         <Link href={"/about"}><li className='cursor-pointer hover:underline'>About</li></Link>

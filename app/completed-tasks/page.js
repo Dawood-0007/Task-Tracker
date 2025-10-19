@@ -35,10 +35,10 @@ const CompletedTasks = () => {
   return (
     <div>
         <h1 className='text-3xl mt-10 text-center'>All your <span className='text-gray-500'>completed tasks</span> in one place</h1>
-        <div className='absolute left-[43%]'>    
+        <div className='flex flex-col md:flex-row justify-center items-center gap-10 mt-6'>
             <Link href={"/tasks"}><button className='rounded-full border cursor-pointer bg-gray-400 font-semibold text-white p-1 hover:text-gray-500 hover:bg-white hover:border-gray-400 px-4'>See Pending Tasks</button></Link>
         </div>
-         <div className='grid grid-cols-3 gap-4 mt-10 ml-3 p-4'>
+         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8 p-4'>
           {task.length > 0 ? (
           task.map((item, index) => (
             <CompletedComponent

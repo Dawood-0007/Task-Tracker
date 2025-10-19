@@ -13,7 +13,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider 
+      localization={{
+          signIn: {
+            start: {
+              title: "Task Tracker",
+            },
+          },
+      }}>
       <html lang="en">
         <body className={`antialiased`}>
           <Navbar />

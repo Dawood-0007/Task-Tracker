@@ -39,7 +39,7 @@ fetch("/api/backend", requestOptions)
       <h1 className="text-3xl mt-10 text-center">
         Add a new <span className="text-gray-500">task</span>
       </h1>
-      <div className="absolute left-[43%]">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 mt-6">
         <Link href={"/tasks"}>
           <button className="rounded-full border cursor-pointer bg-gray-400 font-semibold text-white p-1 hover:text-gray-500 hover:bg-white hover:border-gray-400 px-4">
             See Pending Tasks
