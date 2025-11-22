@@ -7,6 +7,11 @@ import { useUser } from "@clerk/nextjs";
 
 const Task = () => {
   const { user } = useUser();
+
+  if (!user) {
+    return <p>Loading ...</p>
+  }
+
   const [task, setTask] = useState([]);
   const [relaod, setReload] = useState(true);
 

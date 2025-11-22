@@ -7,6 +7,10 @@ import { useUser } from "@clerk/nextjs";
 const AddTask = () => {
     const { user } = useUser();
 
+    if (!user) {
+      return <p>Loading ...</p>
+    }
+
     const [task, setTask] = useState({
     title: "",
     description: "",
@@ -24,6 +28,8 @@ const requestOptions = {
   body: JSON.stringify(task),
   redirect: "follow"
 };
+
+console.log(task)
 
 fetch("/api/backend", requestOptions)
   .then((response) => response.text())
