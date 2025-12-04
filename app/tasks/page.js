@@ -9,7 +9,7 @@ const Task = () => {
   const { user } = useUser();
 
   if (!user) {
-    return <p>Loading ...</p>
+    return <p className="text-center text-2xl font-bold mt-32">Loading ...</p>
   }
 
   const [task, setTask] = useState([]);
